@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA" Compatible Content="IE edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0"> 
+       </head>
+    <link rel="stylesheet" href="./style.css">
+        <title></title>
+        <body>
+            <h1 >clock</h1>
+            <section>
+                <div class="clock">
+                   <div class="hours"></div>
+                   <div class="minutes"></div>
+                   <div class="seconds"></div>
+                </div>
+               
+             </section>
+
+             <style>
+                *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+h1{
+    display:flex;
+    justify-content: center;
+     align-items:center;
+     font-weight: 200;
+     margin-top: 2rem;
+
+}
+.clock{
+    background-color: gray;
+    height: 400px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 50%;
+    border-color: aquamarine;
+    border: 5px solid gray;
+background-image: url("https://www.freeiconspng.com/thumbs/roman-numerals-png/roman-numerals-clock-png-6.png");
+align-items: center;
+    position: relative;
+}
+
+.hours,.minutes,.seconds{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 5px;
+    width: 40%;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+   transform-origin: left;
+  
+}
+.minutes{
+    
+}
+             </style>
+        </body>
+        <script src="./clock.js">
+            
+
+        </script>
+
+</html> 
